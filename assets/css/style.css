@@ -50,7 +50,8 @@ main{
     border-radius: 10px;
     opacity: 0;
     pointer-events: none;
-    width: 90vw;
+    width: 80vw;
+    position: absolute;
 }
 
 .activeWelcomeLoad{
@@ -66,7 +67,6 @@ main{
     justify-content: center;
     align-items: center;
     flex:1 1 auto;
-    line-height: 1.5;
 }
 
 .content-box h2 {
@@ -93,11 +93,14 @@ main{
 }
 #start-btn:hover {
     color: yellow;
-    padding: 13px 43px;
+  
 }
 
 /* Quiz section */
 .quiz-box{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
     background-color: rgba(238, 124, 62, 0.884);
     padding: 10px;
     margin: 100px 50px;
@@ -107,26 +110,26 @@ main{
     text-align: center;
     opacity: 0;
     pointer-events: none;
-    transition: all 3s ease;
+    transition: all 0.2s ease;
+    width: 90vw;
+    margin-top: 80px;
     position: absolute;
-    width: 80%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-65%, -80%)scale(1);
 }
 
 #quiz-heading{
     display: flex;
-    justify-content: space-around;
+    flex: 1 1 auto;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 #quiz-heading span {
     margin-top: 5px;
     color:#fff;
     background-color: black;
-    padding: 5px 20px;
-    font-size: 20px;
-    border-radius: 15px;
+    padding: 5px 17px;
+    font-size: 17px;
+    border-radius: 10px;
 }
 
 .quiz-box h2 {
@@ -149,7 +152,7 @@ main{
 }
 .btn{
     background-color: #fff;
-    width: 100%;
+    width: 70%;
     border: 1px solid;
     padding: 5px;
     margin-bottom: 5px;
@@ -180,6 +183,7 @@ main{
     font-size: 17px;
     display: none;
     cursor: pointer;
+    width: 100px;
 }
 
 #next-btn:hover{
@@ -248,8 +252,15 @@ main {
 footer {
     padding: 8px;
 }
-.welcome-box{
-    width: 50vw;
-}
 
+#next-btn {
+    width: 150px;
+}
+#quiz-heading span {
+    padding: 5px 30px;
+    border-radius: 15px;
+}
+.quiz-box {
+    width: 60vw;
+}
 }
