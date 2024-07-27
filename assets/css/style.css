@@ -59,7 +59,7 @@ main{
 
 .activeWelcomeLoad{
    opacity: 1;
-   pointer-events: auto;
+   pointer-events: fill;
    transition: all 3s ease;
 }
 /*..........Button.*/
@@ -118,7 +118,7 @@ main{
 /* To show quiz up in the website after start button clicked */
 .activeQuiz{
     opacity: 1;
-    pointer-events: auto;
+    pointer-events: fill;
     z-index: 3;
 }
 
