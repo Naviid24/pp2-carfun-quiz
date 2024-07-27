@@ -166,3 +166,25 @@ function resetState(){
      answerSelected = false; //reset the flag
      document.removeEventListener("keydown", handleKeyPress); 
 }
+
+// Handle answer selection
+function selectAnswer(event){
+    let selectedBtn = event.target ;
+    let isCorrect = selectedBtn.dataset.correct === "true";
+    if(isCorrect){
+        selectedBtn.classList.add('correct');
+        score++;
+        clearInterval(counter);
+    }else{
+        selectedBtn.classList.add('incorrect');
+        clearInterval(counter);
+    }
+    Array.from(answerButtons.children).forEach(button => {
+        if(button.dataset.correct === "true"){
+            button.classList.add("correct");
+        } 
+    });
+    nextButton.style.display = 'block';
+    document.addEventListener("keydown", handleKeyPress);
+    
+}
