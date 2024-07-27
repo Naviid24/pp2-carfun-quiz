@@ -202,3 +202,34 @@ function handleKeyPress(event) {
         event.preventDefault();  // Prevent default Enter key action
     }
 }
+
+// Show the user's score
+function showScore(){
+    resetState();
+    questionQuiz.innerHTML = `You scored ${score} out of ${questions.length}!`;
+    nextButton.innerHTML = "Play Again";
+    nextButton.style.display = "block";
+}
+
+// Handle the Next button click
+function handleNextButton(){
+    currentQuestionIndex++;
+    clearInterval(counter);
+    startTimer(count);
+    if(currentQuestionIndex < questions.length){
+        showQuestion();
+    }else {
+        showScore();
+    }
+}
+
+// Add click event listener to the Next button
+nextButton.addEventListener('click', () =>{
+    if(currentQuestionIndex < questions.length){
+        handleNextButton();
+        clearInterval(counter);
+        startTimer(count);
+    }else {
+        startQuiz();
+    }
+});
