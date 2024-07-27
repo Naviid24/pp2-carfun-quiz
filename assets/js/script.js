@@ -188,3 +188,14 @@ function selectAnswer(event){
     document.addEventListener("keydown", handleKeyPress);
     
 }
+
+// Handle key press for Enter key
+function handleKeyPress(event) {
+    if (event.key === "Enter") { // Check if an answer has been selected
+        if (currentQuestionIndex < questions.length) {
+            handleNextButton();
+        } else {
+            startQuiz();
+        } 
+    }
+}
