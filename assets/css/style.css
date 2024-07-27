@@ -1,0 +1,330 @@
+/* Asterisk wildcard selector to override default styles added by the browser */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+/*..........General rules.*/
+body{
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/*..........Heading.*/
+header{
+    text-align: center;
+}
+header h1 {
+    color: rgb(6, 7, 10);
+    background-color: rgb(237, 108, 41);
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 2px 2px rgb(6, 7, 10);
+}
+header h1:hover{
+    color: rgb(245, 245, 12);
+}
+
+/*..........Main.*/
+main{
+    display: flex;
+    flex: 1 0 auto;
+    flex-wrap: wrap;
+    background-image: url("../images/hero-orangeDodge.avf.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 43px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.welcome-box {
+    background-color: rgba(238, 124, 62, 0.884);
+    padding: 20px;
+    text-align: center;
+    line-height: 1.5;
+    border-radius: 10px;
+    margin: 100px 50px;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-65%, -80%)scale(1);
+}
+
+.activeWelcomeLoad{
+   opacity: 1;
+   pointer-events: auto;
+   transition: all 3s ease;
+}
+/*..........Button.*/
+#start-btn {
+    margin-top: 20px;
+    padding: 10px 40px;
+    color: #fff;
+    background-color: black;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    border: 0; 
+    cursor: pointer;
+}
+#start-btn:hover {
+    color: yellow;
+    padding: 13px 43px;
+}
+
+/* Quiz section */
+.quiz-box{
+    background-color: rgba(238, 124, 62, 0.884);
+    padding: 10px;
+    margin: 100px 50px;
+    line-height: 1.5;
+    color: #fff;
+    border-radius: 15px;
+    text-align: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 3s ease;
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-65%, -80%)scale(1);
+}
+
+#quiz-heading{
+    display: flex;
+    justify-content: space-around;
+}
+
+#quiz-heading span {
+    margin-top: 5px;
+    color: b#fff;
+    background-color: black;
+    padding: 5px 20px;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+.quiz-box h2 {
+   color: black;
+}
+
+/* To show quiz up in the website after start button clicked */
+.activeQuiz{
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 3;
+}
+
+#question-line{
+    margin-top: 5px;
+    margin-bottom: 8px;
+    color: black;
+    font-weight: 400;
+    font-size: medium;
+}
+.btn{
+    background-color: #fff;
+    width: 100%;
+    border: 1px solid;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: 0;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: small;
+}
+
+/* These two selector will add to our html elements when user clicked on the answer buttons */
+.correct{
+    background-color: green;
+}
+.incorrect{
+    background-color: red;
+}
+
+#next-btn {
+    padding: 10px 30px;
+    border-radius: 15px;
+    margin-top: 10px;
+    border: 0;
+    background-color:black;
+    color: #fff;
+    font-size: 17px;
+    display: none;
+    cursor: pointer;
+}
+
+#next-btn:hover{
+    color: yellow;
+}
+/* this hover works when the button is not disabled, because we added disabled attribute by js to the buttons when user selected a button */
+.btn:hover:not([disabled]){
+    background-color: #464f48;
+}
+.btn:disabled{
+    cursor: no-drop;
+}
+
+.score-box {
+    background-color: rgba(238, 124, 62, 0.884);
+    padding: 10px;
+    margin: 100px 50px;
+    line-height: 1.5;
+    color: #fff;
+    border-radius: 15px;
+    text-align: center;
+    opacity: 0;
+    transition: all 3s ease;
+    position: absolute;
+    width: 35%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-65%, -80%)scale(1);
+}
+
+.activeScoreBox {
+    opacity: 1;
+    z-index: 5;
+}
+
+/*..........Footer.*/
+footer {
+    background-color: rgb(237, 108, 41);
+    width: 100%;
+}
+#social-networks{
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+#social-networks i {
+    font-size: 200%;
+    padding: 5%;
+    color:rgb(6, 7, 10);
+}
+#social-networks i:hover {
+    color:rgb(245, 245, 12);
+}
+
+@media (min-width: 768px){
+
+    header h1{
+        padding: 16px 0px;
+        font-size: 40px;
+    }
+   main {
+    margin-top: 84px;
+   }
+    .container{
+        position: absolute;
+        background-color: rgba(128, 128, 128, 0.4) ;
+        padding: 20px;
+        text-align: center;
+        line-height: 1.5;
+        width: 500px;
+        margin-top: 100px;
+        margin-left: 100px;
+        
+    }
+
+    .quiz-box {
+        position: absolute;
+        width: 60%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-55%, -90%)scale(1);
+    }
+    .welcome-box{
+        position: absolute;
+        width: 70%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-55%, -130%)scale(1);
+    }
+    .quiz-box h2 {
+        font-size: xx-large;
+     }
+    #question-line{
+        font-size: x-large;
+    }
+    .btn{
+        padding: 10px;
+        font-size: large;
+    }
+    #next-btn{
+        font-size: large;
+        padding: 10px 40px;
+    }
+    #social-networks{
+        padding: 15px;
+    }
+}
+
+
+@media (min-width: 992px){
+
+    header h1{
+        padding: 16px 0px;
+        font-size: 40px;
+    }
+
+    .first-main {
+        justify-content: center;
+        position: relative;
+      }
+
+    .container{
+        position: absolute;
+        background-color: rgba(128, 128, 128, 0.4) ;
+        padding: 20px;
+        text-align: center;
+        line-height: 1.5;
+        width: 500px;
+        margin-top: 100px;
+        margin-left: 500px;
+        
+    }
+    .quiz-box {
+        position: absolute;
+        width: 60%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-55%, -90%)scale(1);
+    }
+    .welcome-box {
+    position: absolute;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-55%, -130%)scale(1);
+}
+.quiz-box h2 {
+    font-size: xx-large;
+ }
+#question-line{
+    font-size: x-large;
+}
+.btn{
+    padding: 10px;
+    font-size: large;
+}
+#next-btn{
+    font-size: large;
+    padding: 10px 40px;
+}
+#social-networks{
+    padding: 15px;
+}
+
+}
