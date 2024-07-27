@@ -106,6 +106,11 @@ const startButton = document.getElementById('start-btn');
 const welcomeBox = document.getElementsByClassName('welcome-box')[0];
 const quizBox = document.getElementsByClassName('quiz-box')[0];
 
+//After entire of the web page has been loaded the welcome box will show up
+document.addEventListener("DOMContentLoaded", function(){
+    welcomeBox.classList.add("activeWelcomeLoad");
+    clearInterval(counter);
+});
 
 //Add event listenet to start button to start the quiz
 startButton.addEventListener("click", function(){
