@@ -94,3 +94,26 @@ const questions = [
     }
 
 ];
+
+
+// Base code structure credit: https://www.youtube.com/watch?v=xZXW5SnCiWI
+// Global variables to track the quiz state
+// Contains current question index, user's score
+const questionQuiz = document.getElementById('question-line');
+const answerButtons = document.getElementById('answer-buttons');
+const nextButton = document.getElementById('next-btn');
+const startButton = document.getElementById('start-btn');
+const welcomeBox = document.getElementsByClassName('welcome-box')[0];
+const quizBox = document.getElementsByClassName('quiz-box')[0];
+
+
+//Add event listenet to start button to start the quiz
+startButton.addEventListener("click", function(){
+    welcomeBox.classList.remove("activeWelcomeLoad"); //Hide welcome box
+    quizBox.classList.add("activeQuiz");              //Show quiz section
+    changeBackgroundImage();                          //change the background of the page
+    startQuiz();                                      //To show shw question and answers options
+    clearInterval(counter);
+    startTimer(count);
+});
+
