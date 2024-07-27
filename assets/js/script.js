@@ -1,0 +1,96 @@
+
+// Questions for the quiz are stored in an array below.
+// Each question is an object with value of the question text and  an array with 4 objects and each object have 2 properties
+const questions = [
+    {
+        question: "Who is the only person in Britain who does not need a driving licence?",
+        answers: [
+            {text: "The King", correct: true},
+            {text: "Prime minister", correct: false},
+            {text: "Royal family", correct: false},
+            {text: "Prince Harry", correct: false},
+        ]
+    },
+    {
+        question: "If you could drive upwards at 60mph, how long would it take to get to the Moon?",
+        answers: [
+            {text: "Just under 12 months", correct: false},
+            {text: "Just under 24 months", correct: false},
+            {text: "Just under 8 months", correct: false},
+            {text: "Just under 6 months", correct: true},
+        ]
+    },
+    {
+        question: "In the average car’s lifetime, how many owners will it have?",
+        answers: [
+            {text: "Five", correct: false},
+            {text: "Four", correct: true},
+            {text: "Three", correct: false},
+            {text: "Six", correct: false},
+        ]
+    },
+    {
+        question: "In what country do drivers over the age of 75 have to display a special sign in the back of their car to let drivers know they are old?",
+        answers: [
+            {text: "France", correct: false},
+            {text: "The UK", correct: false},
+            {text: "Japan", correct: true},
+            {text: "South Korea", correct: false},
+        ]
+    },
+    {
+        question: "What percentage of the world’s population drives on the left?",
+        answers: [
+            {text: "45%", correct: false},
+            {text: "35%", correct: true},
+            {text: "25%", correct: false},
+            {text: "20%", correct: false},
+        ]
+    },
+    {
+        question: "Which famous Entrepreneur drove with no licence plate?",
+        answers: [
+            {text: "Jeff Bezos", correct: false},
+            {text: "Elon Musk", correct: false},
+            {text: "Mark Zuckerberg", correct: false},
+            {text: "Steve Jobs - and legally too! A loophole in California vehicle laws allows anyone with a brand new car six months to affix a licence plate.", correct: true},
+        ]
+    },
+    {
+        question: "What percentage of all registered cars in Albania are Mercedes Benz?",
+        answers: [
+            {text: "90%", correct: false},
+            {text: "80%", correct: true},
+            {text: "70%", correct: false},
+            {text: "50%", correct: false},
+        ]
+    },
+    {
+        question: "What percentage of all Rolls-Royce’s cars ever produced are still on the road?",
+        answers: [
+            {text: "75%", correct: true},
+            {text: "80%", correct: false},
+            {text: "70%", correct: false},
+            {text: "60%", correct: false},
+        ]
+    },
+    {
+        question: "What is the highest amount of people on record to be crammed into a Smart car?",
+        answers: [
+            {text: "20", correct: true},
+            {text: "30", correct: false},
+            {text: "10", correct: false},
+            {text: "15", correct: false},
+        ]
+    },
+    {
+        question: "What is the highest vehicle mileage on record?",
+        answers: [
+            {text: "4,039,122", correct: false},
+            {text: "3,500,000", correct: false},
+            {text: "3,039,122", correct: true}, 
+            {text: "4,000,000", correct: false}, 
+        ]
+    }
+
+];
