@@ -38,7 +38,6 @@ main{
     margin-top: 43px;
     align-items: center;
     justify-content: center;
-
 }
 
 .welcome-box {
@@ -52,12 +51,12 @@ main{
     pointer-events: none;
     width: 80vw;
     position: absolute;
+    transition: all 1s ease;
 }
 
 .activeWelcomeLoad{
     opacity: 1;
     pointer-events:fill;
-    transition: all 0.2s ease;
  }
 
  
@@ -110,7 +109,6 @@ main{
     text-align: center;
     opacity: 0;
     pointer-events: none;
-    transition: all 0.2s ease;
     width: 90vw;
     margin-top: 80px;
     position: absolute;
@@ -263,4 +261,11 @@ footer {
 .quiz-box {
     width: 60vw;
 }
+
+.content-box p {
+    font-size: large;
+    line-height: 1.7;
+}
+
+
 }
