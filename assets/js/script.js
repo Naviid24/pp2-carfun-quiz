@@ -183,19 +183,22 @@ function selectAnswer(event){
         if(button.dataset.correct === "true"){
             button.classList.add("correct");
         } 
+        button.disabled = true;
     });
     nextButton.style.display = 'block';
+    answerSelected = true; //set the flag to true
     document.addEventListener("keydown", handleKeyPress);
     
 }
 
 // Handle key press for Enter key
 function handleKeyPress(event) {
-    if (event.key === "Enter") { // Check if an answer has been selected
+    if (event.key === "Enter" && answerSelected) { // Check if an answer has been selected
         if (currentQuestionIndex < questions.length) {
             handleNextButton();
         } else {
             startQuiz();
         } 
+        event.preventDefault();  // Prevent default Enter key action
     }
 }
