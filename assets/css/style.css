@@ -267,5 +267,14 @@ footer {
     line-height: 1.7;
 }
 
+#question-line{
+    font-size: 20px;
+}
+
+.btn {
+    padding: 10px;
+    font-size: 17px;
+}
+
 
 }
