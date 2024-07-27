@@ -155,3 +155,14 @@ function showQuestion(){
         });
         
     }
+
+
+    // Reset the state of the quiz box
+function resetState(){
+    nextButton.style.display = "none";
+    while(answerButtons.hasChildNodes()){
+        answerButtons.removeChild(answerButtons.firstChild);
+    }
+     answerSelected = false; //reset the flag
+     document.removeEventListener("keydown", handleKeyPress); 
+}
