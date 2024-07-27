@@ -122,3 +122,36 @@ startButton.addEventListener("click", function(){
     startTimer(count);
 });
 
+//To change the background image
+function changeBackgroundImage(){
+    let backGround = document.getElementsByTagName('main')[0];
+    backGround.style.backgroundImage = "url('assets/images/black-dodge.avf.jpg')";
+}
+
+//To show the questions up in the quiz box
+function startQuiz(){
+    currentQuestionIndex = 0;
+    score = 0;
+    nextButton.innerHTML = "Next";
+    answerSelected = false; // Reset the flag
+    showQuestion();  
+}
+
+//To show the question
+function showQuestion(){
+    resetState();
+    let currentQuestion = questions[currentQuestionIndex];
+    let questionNo = currentQuestionIndex + 1 ;
+    questionQuiz.innerHTML = questionNo + ". " + currentQuestion.question;
+    currentQuestion.answers.forEach(answer => {
+        let button = document.createElement('button');
+        button.innerHTML = answer.text;
+        button.classList.add('btn');
+        answerButtons.appendChild(button);
+        if(answer.correct){
+            button.dataset.correct = answer.correct;
+        }
+          button.addEventListener('click', selectAnswer);  
+        });
+        
+    }
