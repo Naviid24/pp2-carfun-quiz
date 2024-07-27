@@ -6,14 +6,45 @@
     <meta name="decription" content="CarFun Quiz website is for who interests to cars and driving">
     <meta name="keywords" content="driving, license, cars, fun">
     <meta name="author" content="CarFun Quiz">
-    <title>Document</title>
+    <title>CarFun Quiz</title>
 </head>
 <body>
     <!--Heading---------->
-    <header></header>
+    <header>
+        <a href="index.html">
+            <h1><i>CarFun Quiz</i></h1>
+        </a>
+    </header>
 
     <!--Main------------->
-    <main></main>
+    <main>
+        <!--Welcome Box-->
+        <section class="welcome-box">
+            <div class="content-box">
+             <h2><i>CarFun Quiz</i></h2><br>
+              <p>Welcome to our car quiz! Find out just how much you really know by taking our fun car quiz. </p><br>
+              <p>If you enjoyed these car quiz then remember to share it with your friends and check back
+                 often to enjoy new car quiz games that are frequently added</p><br>
+              <p>Get started now by clicking on the Start button</p>
+            </div>
+            <button id="start-btn">Start Quiz</button>
+         </section>
+         <!--Quiz Box-->
+         <section class="quiz-box active">
+            <div id="quiz-heading">
+            <h2><i>CarFun Quiz</i></h2>
+            <span id="count"></span>
+            </div>
+            <h2 id="question-line">question</h2>
+            <div id="answer-buttons">
+                <button class="btn">Answer1</button>
+                <button class="btn">Answer2</button>
+                <button class="btn">Answer3</button>
+                <button class="btn">Answer4</button>
+            </div>
+            <button id="next-btn">Next</button>
+        </section>
+    </main>
 
     <!--Footer----------->
     <footer></footer>
