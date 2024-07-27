@@ -105,7 +105,12 @@ const nextButton = document.getElementById('next-btn');
 const startButton = document.getElementById('start-btn');
 const welcomeBox = document.getElementsByClassName('welcome-box')[0];
 const quizBox = document.getElementsByClassName('quiz-box')[0];
-
+let timeCount = document.getElementById('count'); 
+let answerSelected = false;
+let currentQuestionIndex = 0;
+let score = 0;
+let counter;
+let count = 15;
 //After entire of the web page has been loaded the welcome box will show up
 document.addEventListener("DOMContentLoaded", function(){
     welcomeBox.classList.add("activeWelcomeLoad");
