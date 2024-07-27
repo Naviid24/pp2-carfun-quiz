@@ -233,3 +233,27 @@ nextButton.addEventListener('click', () =>{
         startQuiz();
     }
 });
+
+function startTimer(time){
+    counter = setInterval(timer, 1000);
+    function timer(){
+        timeCount.textContent ="Time Left "+ time ;
+        time--;
+        if(time < 9){
+        timeCount.textContent ="Time Left" + " 0"+ time;
+        }
+        if (time < 0){
+            clearInterval(counter);
+            timeCount.innerHTML="Time Off";
+            Array.from(answerButtons.children).forEach(button => {
+                if (button.dataset.correct) {
+                    button.classList.add("correct");
+                }
+                button.disabled = true;
+            });
+            nextButton.style.display = 'block';
+            answerSelected = true;
+            document.addEventListener("keydown", handleKeyPress);
+        }
+    }
+}
