@@ -1,4 +1,5 @@
 
+/*jshint esversion: 6 */
 // Questions for the quiz are stored in an array below.
 // Each question is an object with value of the question text and  an array with 4 objects and each object have 2 properties
 const questions = [
@@ -227,6 +228,7 @@ function handleNextButton(){
         showQuestion();
     }else {
         showScore();
+
     }
 }
 
