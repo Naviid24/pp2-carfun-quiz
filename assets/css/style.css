@@ -36,6 +36,19 @@ main{
     align-items: center;
     justify-content: center;
 }
+/*--404 error container--*/
+.error-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+/*--Eror note--*/
+.error-box {
+    background-color: rgba(238, 124, 62, 0.884);
+    margin-top: 50px;
+    align-items: center;
+}
 /*--Welcome box--*/
 .welcome-box {
     display:flex;
