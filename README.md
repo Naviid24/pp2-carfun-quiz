@@ -118,7 +118,7 @@ The fonts for the website is taken from Visual Studio Code .
 - The design for the page is simple stating the message.
 - This page gives a clear instructions with the link to go back to home page. The user will not have to use the browser's back button and can navigate through website without leaving it.
 
-![404_error_page_image]()
+![404_error_page_image](assets/features/404.png)
 
 ## Testing
 
@@ -147,8 +147,8 @@ The fonts for the website is taken from Visual Studio Code .
 - Each page is checked with the help of WAVE Accessibility tool (<https://wave.webaim.org/>).
 - Home page and quiz page had erros, because I didn't use aria-label attribute for a elements in the footer section in each page and after I added aria-label attribute to them, the errors were solved.
 
-- Accessebility test result with errors [test-photo](assets/accessebility-check-screenshot/accessebility-test-with-errors.png)
-- Accessebility errors description      [test-photo](assets/accessebility-check-screenshot/accessebility-test-errors.png)
+- Accessebility test result with errors [test-photo](assets/errors&warnings/accessebility-test-with-errors.png)
+- Accessebility errors description      [test-photo](assets/errors&warnings/accessebility-test-errors.png)
 
 ### Accessibility passes
 
@@ -159,9 +159,9 @@ The fonts for the website is taken from Visual Studio Code .
   - structural elements: for users of assistive technology as well as visual and semantic meaning.
   - language of the document for screen readers.
 
-- Accessibility test result for home page [test-photo](assets/accessebility-check-screenshot/accessebility-test-home-pageno-errors.png)
-- Accessebility test result for quiz page [test-photo](assets/accessebility-check-screenshot/accessebility-test-quiz-pageno-errors.png)
-- Accessebility test result for 404 page  [test-photo](assets/accessebility-check-screenshot/accessebility-test-404page-no-errors.png)
+- Accessibility test result for home page [test-photo](assets/errors&warnings/accessebility-test-home-pageno-errors.png)
+- Accessebility test result for quiz page [test-photo](assets/errors&warnings/accessebility-test-quiz-section-errors.png)
+- Accessebility test result for 404 page  [test-photo](assets/errors&warnings/accessebility-test-404page-no-errors.png)
 
 ### Manual Testing
 
@@ -189,11 +189,11 @@ Manual testing is performed to ensure website performs well on different browser
 
 - Lighthouse Score for Desktop:
   
-  ![index_page_desktop](assets/lighthouse-test/lighthouse-desktop-score.png)
+  ![index_page_desktop](assets/lighthouse-test/lighthouse-analize.desktop-screen.png)
 
 - Lighthouse Score for Mobile:
 
-  ![index_page_mobile](assets/lighthouse-test/lighthouse-mobile-score.png)
+  ![index_page_mobile](assets/lighthouse-test/lighthouse-mobilescreen.png)
 
 ### Functional Testing
 
@@ -202,10 +202,10 @@ Manual testing is performed to ensure website performs well on different browser
   
   | Button / anchor link (Location)            |  Destination Page                     | Page Opens In New Tab |
   |---------------------------------------------|---------------------------------------|-----------------|
-  | "Start Quiz" (home page)                    | quiz.html / 1st question displayed   | yes - as expected |
-  |"Answer button" (answer is selected)         | quiz.html /  next question displayed  | no - as expected|
-  | "Try again button" (quiz.html / displayed below final score)| quiz.html / quiz page with first question displayed | no - as expected |
-  | Home Page / Quiz page link (Header link) | index.html                             | no - as expected |
+  | "Start Quiz" (home page)                    | index.html / 1st question displayed   | no - as expected |
+  |"Answer button" (answer is selected)         | index.html /  next question displayed  | no - as expected|
+  | "Play again button" (index.html / displayed below final score)| index.html with first question displayed | no - as expected |
+  | Home Page link (Header link) | index.html    |index.html                             | no - as expected |
   | "GitHub" icon (footer section)               |  <https://github.com/Naviid24>        |  yes - as expected |
   | "LinkedIn" icon (footer section)             |  <https://www.linkedin.com/in/navid-bahadorani-44a513299/> | yes - as expected  |
 
@@ -214,11 +214,11 @@ Manual testing is performed to ensure website performs well on different browser
 
      1. Home Page / index.html:
           - User clicks on "Start Quiz" button, user is taken to the quiz game page and question numbers are displayed.
-     2. Quiz Game Section / quiz.html:
+     2. Quiz Game Section / index.html:
            - User selects one of the answer buttons, if the answer is correct, the button is highlighted in green colour.
            - If the selected answer is wrong, the button is highlighted in red colour and simultaneously correct ones is highlighted with green colour.
            - With each answer button selected next question is displayed. The question is incremented by 1.
-     3. Score Section / quiz.html:
+     3. Score Section / index.html:
            - User completes the 10 questions of quiz, final score with number of correct questions answered to complete the quiz is displayed.
          - User clicks on the "Try again" button, user is taken back to quiz section and first question will be displayed.
 
@@ -229,17 +229,17 @@ Manual testing is performed to ensure website performs well on different browser
 - HTML Validation
   - No errors were found when passing through the official W3C Validator
 
-    ![HTML_validation](assets/validation-screenshot/html-validation-check.png)
+    ![HTML_validation](assets/validation/html-validation.png)
 
 - CSS Validation
   - No errors were found when passing through the official Jigsaw W3 Validator
 
-   ![CSS_validation](assets/validation-screenshot/css-validation-check.png)
+   ![CSS_validation](assets/validation/css-validation.png)
 
 - JavaScript Validation
   - No errors were found when passing through the jshint validator.
 
-   ![JavaScript_validation](assets/images/readme/jshint_js_script_validation.png)
+   ![JavaScript_validation](assets/validation/js-validation.png)
 
 ### Unfixed Bugs
 
@@ -289,7 +289,7 @@ Code has been pushed to repository on Github with following git commands:
 5. Find the sub-section "Branch".
 6. From the drop-down menu "none"/"select branch" and choose source "main" (or "master").
 7. Click 'Save'
-8. Wait until you can see a link for deployed page within GitHub Page section. This can take a while. Once the page updates you will see a message: Your site is live at <https://naviid24.github.io/project-2-carfun/>
+8. Wait until you can see a link for deployed page within GitHub Page section. This can take a while. Once the page updates you will see a message: Your site is live at <https://naviid24.github.io/pp2-carfun-quiz/>
 
 # Technologies
 
