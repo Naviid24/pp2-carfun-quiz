@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="decription" content="CarFun Quiz website is for who interests to cars and driving">
+    <meta name="keywords" content="driving, license, cars, fun">
+    <meta name="author" content="CarFun Quiz">
+    <!--Link my style sheet-->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!--Title of the page with an icon-->
+    <link href="assets/icon/orange-car-icon.png" rel="icon">
+    <title>CarFun Quiz</title>
+</head>
+<body>
+    <!--Heading-->
+    <header>
+        <a href="index.html">
+            <h1><i>CarFun Quiz</i></h1>
+        </a>
+    </header>
+    <!--Main-->
+    <main>
+        <!--Welcome Box-->
+        <section class="welcome-box">
+          <div class="content-box">
+           <h2><i>CarFun Quiz</i></h2><br>
+            <p>Welcome to our car quiz! </p><br>
+            <ol class="note-list">
+              <li>You will have only <i> 15 seconds </i> per each question.</li>
+              <li>Once you select your answer, it can't be undone.</li>
+              <li>You can not select any option once time goes off.</li>
+              <li>You will get points on the basis of your correct answers.</li>
+            </ol>
+              </p><br>
+            <p>Get started now by clicking on the Start button</p>
+          </div>
+          <button id="start-btn">Start Quiz</button>
+       </section>
+    <!--Quiz box-->
+        <section class="quiz-box active">
+          <div id="quiz-heading">
+          <h2><i>CarFun Quiz</i></h2>
+          <span id="count"></span>
+          </div>
+          <h2 id="question-line">question</h2>
+          <div id="answer-buttons">
+              <button class="btn">Answer1</button>
+              <button class="btn">Answer2</button>
+              <button class="btn">Answer3</button>
+              <button class="btn">Answer4</button>
+          </div>
+          <button id="next-btn">Next</button>
+      </section>
+    </main>
+    <!--Footer-->
+    <footer>
+        <ul id="social-networks" >
+          <li><a href="https://github.com/Naviid24" target="_blank" rel="noopener" ><i class="fa-brands fa-github"></i></a></li> <!-- use rel attribute to protect our site from possible attack --> 
+          <li><a href="https://www.linkedin.com/in/navid-bahadorani-44a513299/" target="_blank" rel="noopener" > <i class="fa-brands fa-linkedin"></i></a></li>
+        </ul>
+      </footer>
+      <!-- Font awesome icon link for footer icons -->
+ <script src="https://kit.fontawesome.com/3b20d96fa9.js" crossorigin="anonymous"></script>
+  <!-- to link my external js code to my html page -->
+<script src="assets/js/script.js" type="module"></script>
+</body>
+</html>
