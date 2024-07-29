@@ -340,7 +340,7 @@ Code has been pushed to repository on Github with following git commands:
 - [jshint validator](https://jshint.com/) - used to check java script code for errors.
 - Code Institute's GitPod Template to generate the workspace for the project.
 - BrowserStack for cross-browser testing.
-
+- 
 # Credits
 
 - The website's background image is from the pexels website from (www.pexels.com).
@@ -353,6 +353,8 @@ Code has been pushed to repository on Github with following git commands:
 - JavaTpoint JavaScript tutorials
 - Love Maths project from Code Institute for general help.
 - Readme structure from my last project: <https://github.com/Naviid24/project-1/blob/main/README.md>
+- [stackoverflow website]([https://jshint.com/](https://stackoverflow.com/)) - used to resolve warnings in the jshint.
+- [stackoverflow website](https://stackoverflow.com/questions/73164391/my-javascript-drop-down-list-doesnt-work-on-safari-browser) - used to randomise my quiz questions.
 
 ## Acknowledgements
 
