@@ -230,6 +230,10 @@ header h1 {
 main {
     margin-top: 64px;
 }
+/*--Welcome box*/
+.welcome-box {
+    width: 45vw;
+}
 /*--The footer gets wider--*/
 footer {
     padding: 8px;
