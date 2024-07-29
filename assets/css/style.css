@@ -44,6 +44,7 @@ main{
     display:flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
     background-color: rgba(238, 124, 62, 0.884);
     text-align: center;
     border-radius: 10px;
@@ -71,6 +72,7 @@ main{
     display:flex;
     flex-direction: column;
     align-items: baseline;
+    list-style-type: none;
 }
 /*--Use this class's rules in JavaScript to show up welcome box--*/
 .activeWelcomeLoad{
@@ -258,5 +260,8 @@ footer {
 .btn {
     padding: 10px;
     font-size: 17px;
+}
+.note-list{
+    font-size: large;
 }
 }
