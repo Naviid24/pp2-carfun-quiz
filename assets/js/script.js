@@ -128,6 +128,14 @@ startButton.addEventListener("click", function(){
     startTimer(count);
 });
 
+//To shuffle the questions array
+function shuffle(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+}
+
 //To change the background image
 function changeBackgroundImage(){
     let backGround = document.getElementsByTagName('main')[0];
@@ -140,6 +148,7 @@ function startQuiz(){
     score = 0;
     nextButton.innerHTML = "Next";
     answerSelected = false; // Reset the flag
+    shuffle(questions); // Shuffle questions before starting the quiz
     showQuestion();  
 }
 
@@ -163,7 +172,7 @@ function showQuestion(){
     }
 
 
-    // Reset the state of the quiz box
+// Reset the state of the quiz box
 function resetState(){
     clearInterval(counter);
     startTimer(count);
@@ -196,7 +205,6 @@ function selectAnswer(event){
     nextButton.style.display = 'block';
     answerSelected = true; //set the flag to true
     document.addEventListener("keydown", handleKeyPress);
-    
 }
 
 // Handle key press for Enter key
@@ -243,6 +251,7 @@ nextButton.addEventListener('click', () =>{
     }
 });
 
+//To set a 15sec time for the user to choose an answer
 function startTimer(time){
     counter = setInterval(timer, 1000);
     function timer(){
