@@ -27,10 +27,10 @@
 
 ## Quiz Rules
 
-- You will have only 15 seconds per each question.
-- Once you select your answer, it can't be undone.
-- You can not select any option once time goes off.
-- You will get points on the basis of your correct answers.
+- The user, will have only 15 seconds per each question.
+- The user, Once select the answer, it can't be undone.
+- The user, can not select any option once time goes off.
+- The user, will get points on the basis of correct answers.
   
 #### All the users want to be able to access and view the website comfortably on mobile, tablet and desktop devices
 
