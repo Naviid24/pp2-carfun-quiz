@@ -96,7 +96,6 @@ const questions = [
 
 ];
 
-
 // Base code structure credit: https://www.youtube.com/watch?v=xZXW5SnCiWI
 // Global variables to track the quiz state
 // Contains current question index, user's score
@@ -167,10 +166,8 @@ function showQuestion(){
             button.dataset.correct = answer.correct;
         }
           button.addEventListener('click', selectAnswer);  
-        });
-        
-    }
-
+    });
+}
 
 // Reset the state of the quiz box
 function resetState(){
