@@ -164,6 +164,8 @@ function showQuestion(){
 
     // Reset the state of the quiz box
 function resetState(){
+    clearInterval(counter);
+    startTimer(count);
     nextButton.style.display = "none";
     while(answerButtons.hasChildNodes()){
         answerButtons.removeChild(answerButtons.firstChild);
