@@ -21,6 +21,7 @@
 - As a user, I want to see which question I am on.
 - As a user, I want to see the questions and the options I get with it.
 - As a user, I want to see if the answer I have chosen is right or wrong before moving on to the next question.
+- As a user, I want to se how much time I have to answer the question.
 - As a user, I want to see my final score.
 - As a user I want to have a chance to do the quiz again.
   
@@ -126,7 +127,7 @@ The fonts for the website is taken from Visual Studio Code .
 
 - The site is designed to be flexible, fluid and responsive on all screen sizes. Website have been checked for responsiveness through Chrome Development tools. In order to do this, the following steps are taken:
   1. Open the browser.
-  2. Navigate to The CarFun Quiz website <https://naviid24.github.io/project-2-carfun/quiz.html>
+  2. Navigate to The CarFun Quiz website <https://naviid24.github.io/pp2-carfun-quiz/>
   3. Right click anywhere on the page and go to "Inspect" to open Development Tools.
   4. Click on drop down menu: "Dimensions: Responsive" and choose "Responsive".
   5. Drag the side of the screen and change screen size, making sure the website looks good from 320px and up. Here, ensure there is consistency in design of the website on every screen size from small(mobile devices) to larger(desktop devices) and no scorll bar is showing for layout of site.
