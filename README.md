@@ -9,12 +9,6 @@
 - The CarFun Quiz is an online multiple-choice quiz game website focused on the driving and car questions . The quiz is targeted towards the people (adults and children) who love to know something weird about distance and rules and cars facts.
 - The users can test their knowledge of all things driving related with CarFun Quiz, 10 question quiz! From famous car manufacturers to rules of the road.
 
-# Quiz Rules
-
-- You will have only 15 seconds per each question.
-- Once you select your answer, it can't be undone.
-- You can not select any option once time goes off.
-- You will get points on the basis of your correct answers.
 -----
 
 # User Experience (UX) and Design
@@ -30,6 +24,13 @@
 - As a user, I want to se how much time I have to answer the question.
 - As a user, I want to see my final score.
 - As a user I want to have a chance to do the quiz again.
+
+## Quiz Rules
+
+- You will have only 15 seconds per each question.
+- Once you select your answer, it can't be undone.
+- You can not select any option once time goes off.
+- You will get points on the basis of your correct answers.
   
 #### All the users want to be able to access and view the website comfortably on mobile, tablet and desktop devices
 
