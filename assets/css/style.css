@@ -5,14 +5,14 @@
     font-family: Arial, Helvetica, sans-serif; 
 }
 
-/*..........General rules.*/
+/*--General rules--*/
 body{
     display:flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-/*..........Heading.*/
+/*--Heading--*/
 header{
     text-align: center;
 }
@@ -27,7 +27,7 @@ header h1:hover{
     color: rgb(245, 245, 12);
 }
 
-/*..........Main.*/
+/*--Main--*/
 main{
     display: flex;
     flex: 1 0 auto;
@@ -39,7 +39,7 @@ main{
     align-items: center;
     justify-content: center;
 }
-
+/*--Welcome box--*/
 .welcome-box {
     display:flex;
     flex-direction: column;
@@ -53,13 +53,12 @@ main{
     position: absolute;
     transition: all 1s ease;
 }
-
+/*--Use this rules by JavaScript to show up the welcome box--*/
 .activeWelcomeLoad{
     opacity: 1;
     pointer-events:fill;
  }
-
- 
+/*--Style the contents insde the welcome box--*/
 .content-box{
     display: flex;
     flex-direction: column;
@@ -67,16 +66,19 @@ main{
     align-items: center;
     flex:1 1 auto;
 }
-
-.content-box h2 {
-    margin: 10px;
+/*--Note list in welcome bob--*/
+.note-list {
+    display:flex;
+    flex-direction: column;
+    align-items: baseline;
 }
+/*--Use this class's rules in JavaScript to show up welcome box--*/
 .activeWelcomeLoad{
    opacity: 1;
    pointer-events:fill;
    transition: all 0.2s ease;
 }
-/*..........Button.*/
+/*--Start button--*/
 #start-btn {
     margin-top: 10px;
     padding: 5px;
@@ -95,7 +97,7 @@ main{
   
 }
 
-/* Quiz section */
+/*--Quiz section--*/
 .quiz-box{
     display: flex;
     flex-direction: column;
@@ -113,14 +115,13 @@ main{
     margin-top: 80px;
     position: absolute;
 }
-
 #quiz-heading{
     display: flex;
     flex: 1 1 auto;
     flex-direction: row;
     justify-content: space-between;
 }
-
+/*--To show the time in the quiz section--*/
 #quiz-heading span {
     margin-top: 5px;
     color:#fff;
@@ -129,18 +130,16 @@ main{
     font-size: 17px;
     border-radius: 10px;
 }
-
 .quiz-box h2 {
    color: black;
 }
-
-/* To show quiz up in the website after start button clicked */
+/*--To show quiz section up in the website after start button clicked--*/
 .activeQuiz{
     opacity: 1;
     pointer-events: fill;
     z-index: 3;
 }
-
+/*--Style the question in the quiz section--*/
 #question-line{
     margin-top: 5px;
     margin-bottom: 8px;
@@ -148,6 +147,7 @@ main{
     font-weight: 400;
     font-size: medium;
 }
+/*--Style the answer buttons--*/
 .btn{
     background-color: #fff;
     width: 70%;
@@ -162,15 +162,15 @@ main{
     padding: 5px;
     font-size: small;
 }
-
-/* These two selector will add to our html elements when user clicked on the answer buttons */
+/*--These two class selector will add to the html elements when the user click on a correct answer--*/
 .correct{
     background-color: green;
 }
+/*--These two class selector will add to the html elements when the user click on a incorrect answer--*/
 .incorrect{
     background-color: red;
 }
-
+/*--Next button styles in quiz section--*/
 #next-btn {
     padding: 10px 30px;
     border-radius: 15px;
@@ -183,45 +183,25 @@ main{
     cursor: pointer;
     width: 100px;
 }
-
+/*--When next button get hover ob it--*/
 #next-btn:hover{
     color: yellow;
 }
-/* this hover works when the button is not disabled, because we added disabled attribute by js to the buttons when user selected a button */
+/*--This hover works when the button is not disabled, because we added disabled attribute by js to the buttons when user selected a button */
 .btn:hover:not([disabled]){
     background-color: #464f48;
 }
+/*--The user can click on buttons after this style apply to the answer buttons--*/
 .btn:disabled{
     cursor: no-drop;
 }
 
-.score-box {
-    background-color: rgba(238, 124, 62, 0.884);
-    padding: 10px;
-    margin: 100px 50px;
-    line-height: 1.5;
-    color: #fff;
-    border-radius: 15px;
-    text-align: center;
-    opacity: 0;
-    transition: all 3s ease;
-    position: absolute;
-    width: 35%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-65%, -80%)scale(1);
-}
-
-.activeScoreBox {
-    opacity: 1;
-    z-index: 5;
-}
-
-/*..........Footer.*/
+/*--Footer--*/
 footer {
     background-color: rgb(237, 108, 41);
     width: 100%;
 }
+/*--Style the icons in the footer--*/
 #social-networks{
     padding: 5px 0;
     display: flex;
@@ -233,48 +213,50 @@ footer {
     padding: 5%;
     color:rgb(6, 7, 10);
 }
+/*--When hover the mouse on the icons in the footer--*/
 #social-networks i:hover {
     color:rgb(245, 245, 12);
 }
 
+/*--Make the web page responsive to the bigger screens so make the most element bigger--*/
 @media (min-width: 768px){
-
+/*--In the big screens heading gets wider--*/
 header h1 {
     padding: 10px;
 }
-
+/*--When screen gets big main section still has gap between heading and main--*/
 main {
     margin-top: 64px;
 }
-
+/*--The footer gets wider--*/
 footer {
     padding: 8px;
 }
-
+/*--To make next button bigger--*/
 #next-btn {
     width: 150px;
 }
+/*--To show the timer section bigger with more border redius--*/
 #quiz-heading span {
     padding: 5px 30px;
     border-radius: 15px;
 }
+/*--Change the width ofthe question section--*/
 .quiz-box {
     width: 60vw;
 }
-
+/*--Contents in the welcome box get large font size with more line height between the lines--*/
 .content-box p {
     font-size: large;
     line-height: 1.7;
 }
-
+/*--Change the question font size--*/
 #question-line{
     font-size: 20px;
 }
-
+/*--Answer buttons get changes in the bigger screens--*/
 .btn {
     padding: 10px;
     font-size: 17px;
 }
-
-
 }
