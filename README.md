@@ -1,8 +1,8 @@
 # CarFun Quiz
 
-![Website Mock Up](assets/website-mock-up/website-mock-up.png)
+![Website Mock Up](assets/website-mock-up/mockup.png)
 
-#### [The live website link](https://naviid24.github.io/project-2-carfun/)
+#### [The live website link](https://naviid24.github.io/pp2-carfun-quiz/)
 
 # Purpose
 
@@ -36,11 +36,11 @@ The heading in the header section of the website is styled with hover effect for
 
 ### **Home Page**
 
-![Home-wireframe](assets/wireframes/wireframe-home-page-big-screen.png)
+![Home page-wireframe](assets/wireframes/desktop-homepage.png)
 
-### **Quiz Game Page**
+### **Quiz Section**
 
-![Quiz-wireframe](assets/wireframes/wireframe-quiz-page-big-screen.png)
+![Quiz-wireframe](assets/wireframes/wireframe-quiz-section.png)
 
 ### **404-Error Page**
 
@@ -50,15 +50,7 @@ The heading in the header section of the website is styled with hover effect for
 
 ### **Home Page**
 
-![Home-wireframe](assets/wireframes/wireframe-mobile-screen-home-page.png)   
-
-### **Quiz Game Page**
-![Quiz-wireframe](assets/wireframes/wireframe-mobile-screen-quiz-page.png)
-
-
-### **404-Error Page**
-
-![404-wireframe](assets/wireframes/wireframe-mobile-screen-404page.png) 
+![Home-wireframe](assets/wireframes/mobile-homepage.png)   
 
 ### Typography
 
@@ -93,7 +85,7 @@ The fonts for the website is taken from Visual Studio Code .
 - The header includes a link which user can use if they want to be taken back to home page. The link allows user to easily navigate through the page making the site more interactive.
 - When the header text is hovered over, it will change the colour with a shadow effect, so that the user will be aware of the link. The header is responsive throughout all devices from small screens, tablets to desktop.
   
-![main_header_image](assets/features/carfun-heading.png)
+![main_header_image](assets/features/heading.png)
 
 ### The Home Page
 
@@ -102,7 +94,7 @@ The fonts for the website is taken from Visual Studio Code .
 - The overlay block is same throughout the website for better user experience.
 - The start button on home page when clicked starts the quiz and takes the user to the quiz page.
   
-![home_page_image](assets/features/carfun-home-page.png)
+![home_page_image](assets/features/home-page.png)
 
 ### The Quiz Game Section
 
@@ -111,14 +103,14 @@ The fonts for the website is taken from Visual Studio Code .
 - After the user chose and clicked on his answer next button will be appeared and user is able to click on the next button to go foe next question.
 - At the end of the game user will see how many question answered correctly.
   
-![quiz_page_image](assets/features/carfun-quiz-page.png)
+![quiz_page_image](assets/features/quiz.png)
 
 ### The Footer Section
 
 - Similar to the main header, the footer shows on every page below the quiz section on the website. It displays icon links to GitHub and LinkedIn accounts. These icon links can enable user to see more about my work through GitHub and learn more about me through LinkedIn.
 - The color of the footer is matched with header and color of the background-image.
 
-![footer_image](assets/features/carfun-footer.png)
+![footer_image](assets/features/footer.png)
 
 ### The 404-Error Page
 
@@ -126,7 +118,7 @@ The fonts for the website is taken from Visual Studio Code .
 - The design for the page is simple stating the message.
 - This page gives a clear instructions with the link to go back to home page. The user will not have to use the browser's back button and can navigate through website without leaving it.
 
-![404_error_page_image](assets/features/carfun-404page.png)
+![404_error_page_image]()
 
 ## Testing
 
