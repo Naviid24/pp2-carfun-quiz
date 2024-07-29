@@ -251,16 +251,16 @@ Manual testing is performed to ensure website performs well on different browser
    ![JavaScript_validation](assets/errors&warnings/jshint-warnings.png)
 
  ### Warnings:
-  - After search about these warnings I found the solution in this link (https://stackoverflow.com/questions/27441803/why-does-jshint-throw-a-warning-if-i-am-using-const),
-  - why this happened ?
+  
   - The warnings you are seeing in JSHint photo above are related to the use of ES6 features (const and let) in my JavaScript code. By default, JSHint does not assume ES6 (ECMAScript 2015) compatibility, so it warns 
     us that these features are not available unless you explicitly enable ES6 support.
+    
 ### Solution:
 
+  - After search about these warnings I found the solution in this link (https://stackoverflow.com/questions/27441803/why-does-jshint-throw-a-warning-if-i-am-using-const).
   - You can add a comment at the top of your JavaScript file to specify the ES6 version: /* jshint esversion: 6 */
 
-    
-  - No errors were found when passing through the jshint validator.
+  - No errors or warnings were found when passing through the jshint validator for second time.
 
    ![JavaScript_validation](assets/validation/js-validation.png)
 
