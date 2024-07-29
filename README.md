@@ -126,7 +126,7 @@ The fonts for the website is taken from Visual Studio Code .
 - The design for the page is simple stating the message.
 - This page gives a clear instructions with the link to go back to home page. The user will not have to use the browser's back button and can navigate through website without leaving it.
 
-![404_error_page_image](assets/features/404.png)
+![404_error_page_image](assets/features/404page.png)
 
 ## Testing
 
