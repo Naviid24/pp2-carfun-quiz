@@ -62,7 +62,7 @@ main{
     pointer-events: none;
     width: 80vw;
     position: absolute;
-    transition: all 1s ease;
+    transition: all 0.2s ease;
 }
 /*--Use this rules by JavaScript to show up the welcome box--*/
 .activeWelcomeLoad{
@@ -103,13 +103,11 @@ main{
     color: yellow;
   
 }
-
 /*--Quiz section--*/
 .quiz-box{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    flex: 1 1 auto;
     background-color: rgba(238, 124, 62, 0.884);
     padding: 10px;
     margin: 100px 50px;
