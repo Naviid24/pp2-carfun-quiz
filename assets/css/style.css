@@ -68,6 +68,7 @@ main{
 .activeWelcomeLoad{
     opacity: 1;
     pointer-events:fill;
+    z-index: auto;
  }
 /*--Style the contents insde the welcome box--*/
 .content-box{
@@ -83,12 +84,6 @@ main{
     flex-direction: column;
     align-items: baseline;
     list-style-type: none;
-}
-/*--Use this class's rules in JavaScript to show up welcome box--*/
-.activeWelcomeLoad{
-   opacity: 1;
-   pointer-events:fill;
-   transition: all 0.2s ease;
 }
 /*--Start button--*/
 #start-btn {
