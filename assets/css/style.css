@@ -108,6 +108,7 @@ main{
 .quiz-box{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     flex: 1 1 auto;
     background-color: rgba(238, 124, 62, 0.884);
     padding: 10px;
@@ -119,8 +120,6 @@ main{
     opacity: 0;
     pointer-events: none;
     width: 90vw;
-    margin-top: 80px;
-    position: absolute;
 }
 #quiz-heading{
     display: flex;
