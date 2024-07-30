@@ -130,8 +130,8 @@ main{
     margin-top: 5px;
     color:#fff;
     background-color: black;
-    padding: 5px 17px;
-    font-size: 17px;
+    padding: 5px 8px;
+    font-size: 13px;
     border-radius: 10px;
 }
 .quiz-box h2 {
@@ -244,8 +244,10 @@ footer {
 }
 /*--To show the timer section bigger with more border redius--*/
 #quiz-heading span {
-    padding: 5px 30px;
+    padding: 8px 30px;
     border-radius: 15px;
+    font-size: 16px;
+    margin-top: 0;
 }
 /*--Change the width ofthe question section--*/
 .quiz-box {
