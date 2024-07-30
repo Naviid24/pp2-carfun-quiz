@@ -143,7 +143,7 @@ main{
 .activeQuiz{
     opacity: 1;
     pointer-events: fill;
-    z-index: 3;
+    z-index: auto;
 }
 /*--Style the question in the quiz section--*/
 #question-line{
